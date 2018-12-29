@@ -13,26 +13,35 @@
 
 <body>
 
-  <div class = "header">
-      <img class = "Portrait" src="Portrait.jpeg" alt="Hey, welcome to my website!">
-      <h2><span style="color:#959b9d">DAVID SCHRIEMER /</span><span style="color:white"> COMPUTER SCIENCE</span></h2>
-      <h2><span style="color:#959b9d">UNIVERSITY OF</span><span style="color:white"> VICTORIA</span></h2>
-  </div>
+<div class="container-fluid">
+  <div id="particles-js">
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
-<div class = "container-fluid">
-  <div class="row">
-      <div class="col-lg-3">Education</div>
-      <div class="col-lg-3">Involvement</div>
-      <div class="col-lg-3">Skills</div>
-      <div class="col-lg-3">Contact Me</div>
+  <script> particlesJS.load('particles-js', 'assets/particles.json', function() {
+    console.log('callback - particles.js config loaded');
+  });
+  </script>
 
-  </div>
 </div>
 
-<div id="moreinfo-background">
+<div class="Info">
+
   <div class="container-fluid">
+    <div class = "header">
+        <img class = "Portrait" src="Portrait.jpeg" alt="Hey, welcome to my website!">
+        <h2><span style="color:#959b9d">DAVID SCHRIEMER /</span><span style="color:white"> COMPUTER SCIENCE</span></h2>
+        <h2><span style="color:#959b9d">UNIVERSITY OF</span><span style="color:white"> VICTORIA</span></h2>
+    </div>
+  </div>
+    <div class="row">
+        <div class="col-lg-3"><a href="#edu">Education</a></div>
+        <div class="col-lg-3"><a href="#involve">Involvement</a></div>
+        <div class="col-lg-3"><a href="#skillset">Skills</a></div>
+        <div class="col-lg-3"><a href="#down">Contact Me</a></div>
+
+    </div>
     <!-- provides a full width container, spanning the entire width of the viewport -->
-    <div class="title_ed">
+    <div class="title_ed" id = "edu">
       <h2 class = title>Education</h2>
     </div>
     <div class="row education">
@@ -41,12 +50,12 @@
       </div>
       <div class="text_col col-xl">
         <h1 id = "2row" class="title_col">University of Victoria</h1>
-        <p class="paragraph_col">I am begining my final year of Computer Science at the University of Victoria in British Columbia, Canada. I have completed courses in a wide range of topics, including Algorithms and Data Structures, Computer Architecture, Computer Networking, and Database systems.</p>
+        <p class="paragraph_col">I am beginning my final year of Computer Science at the University of Victoria in British Columbia, Canada. I have completed courses in a wide range of topics, including Algorithms and Data Structures, Computer Architecture, Computer Networking, and Database systems.</p>
 
       </div>
     </div>
     <div>
-      <h2 class=title>Involvement</h2>
+    <h2 id = "involve" class=title >Involvement</h2>
     </div>
     <div class="row first_row">
       <div class="text_col col-xl">
@@ -76,7 +85,7 @@
       </div>
     </div>
     <div>
-      <h2 class=title>Skills</h2>
+      <h2 class=title id = "skillset">Skills</h2>
       <div class="row">
           <div class="col-lg-4">Object Oriented Programming
             <ul class="list-inline list-icons">
@@ -122,7 +131,7 @@
           </div>
     </div>
   </div>
-
+</div>
 
 
 </body>
