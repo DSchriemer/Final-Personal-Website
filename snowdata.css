@@ -57,6 +57,12 @@ body {
   color: white;
 }
 
+.con_col {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+
 .paragraph_col {
   font-size: 25px;
   text-align: center;
@@ -189,4 +195,5 @@ a:hover {
   text-align: center;
   font-size: 50px;
   color: white;
+  margin-bottom: 5%;
 }
